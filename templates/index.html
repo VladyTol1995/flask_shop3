@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ shop_name }}</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Добро пожаловать в {{ shop_name }}!</h1>
+
+  {% if products %}
+    <ul class="product-list">
+      {% for product in products %}
+        <li class="product">
+          <!-- Изображение товара -->
+          <img src="{{ url_for('static', filename='images/' + product.image) }}" alt="{{ product.name }}" width="150">
+          <!-- Название товара -->
+          <h2>{{ product.name }}</h2>
+          <!-- Цена товара -->
+          <p>Цена: {{ product.price }} руб.</p>
+          <!-- Рейтинг и отзывы -->
+          <p>Рейтинг: {{ product.rating }} ({{ product.reviews }} отзывов)</p>
+          <!-- Ссылка на страницу товара -->
+          <a href="{{ url_for('product', product_id=product.id) }}">Подробнее</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>Нет доступных товаров.</p>
+  {% endif %}
+</body>
+</html>
