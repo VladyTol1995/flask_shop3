@@ -1,0 +1,42 @@
+﻿[
+    {
+        "id": 1,
+        "name": "Смартфон Apple IPhone 16",
+        "category": "Смартфоны",
+        "price": "112,000 ₽",
+        "rating": 4.5,
+        "reviews": 32,
+        "image": "IPhone.jpg",
+        "url": "/product/1"
+    },
+    {
+        "id": 2,
+        "name": "Смартфон Sony",
+        "category": "Смартфоны",
+        "price": "85,000 ₽",
+        "rating": 5.0,
+        "reviews": 655,
+        "image": "Sony.jpg",
+        "url": "/product/2"
+    },
+    {
+        "id": 3,
+        "name": "Ультрабук ASUS",
+        "category": "Ноутбуки",
+        "price": "202,000 ₽",
+        "rating": 4.7,
+        "reviews": 45,
+        "image": "ASUS.jpg",
+        "url": "/product/3"
+    },
+    {
+        "id": 4,
+        "name": "Наушники Apple AirPods 2",
+        "category": "Аксессуары",
+        "price": "25,000 ₽",
+        "rating": 4.2,
+        "reviews": 15,
+        "image": "AirPods.jpg",
+        "url": "/product/4"
+    }
+  ]
